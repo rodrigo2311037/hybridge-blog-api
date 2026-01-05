@@ -71,7 +71,6 @@ Endpoint
 POST /api/signup
 ```
 
-Descripción:
 
 Crea un nuevo usuario.
 
@@ -183,9 +182,9 @@ DELETE /api/posts/:id (protegido)
 
 Control de acceso utilizado:
 
--Lectura publica
+Lectura publica
 
--Escritura Protegida
+Escritura Protegida
 
 Recursos:
 
@@ -222,23 +221,7 @@ Buenas prácticas implementadas
 
 ✔️ Arquitectura escalable
 
----
 
-Tecnologías utilizadas
-
-Node.js
-
-Express.js
-
-Passport.js
-
-JWT (jsonwebtoken)
-
-Sequelize
-
-bcrypt
-
-PostgreSQL  (supabase)
 
 ---
 
