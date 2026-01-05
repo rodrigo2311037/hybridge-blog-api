@@ -1,4 +1,6 @@
 <h1 align="center">  Hybridge Blog API </h1>
+
+
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
@@ -14,7 +16,9 @@ Incluye autenticación basada en JWT y una arquitectura modular orientada a buen
 Permite la gestión de:
 
 -Usuarios (registro y autenticación)
+
 -Autores
+
 -Posts de un blog
 
 ---
@@ -53,6 +57,7 @@ Se utiliza una arquitectura tipo MVC ligera, organizada en capas.
 La API utiliza Passport.js con dos estrategias:
 
 -LocalStrategy	=> Autenticación inicial (login)
+
 -JwtStrategy	=> Protección de rutas
 
 ---
@@ -67,7 +72,9 @@ POST /api/signup
 ```
 
 Descripción:
+
 Crea un nuevo usuario.
+
 La contraseña se encripta con bcrypt antes de guardarse en la base de datos.
 
 Respuesta:
@@ -89,12 +96,18 @@ POST /api/login
 Funcionamiento interno:
 
 *Passport usa LocalStrategy
+
 *Se valida:
+
 *email existente
+
 *contraseña correcta
 
+
 Si es válido:
+
 *se genera un JWT
+
 *se devuelve al cliente
 
 Respuesta:
@@ -119,7 +132,9 @@ Authorization: Bearer <TOKEN>
 Passport usa JwtStrategy para:
 
 -validar la firma del token
+
 -extraer el userId
+
 -cargar el usuario en req.user
 
 ---
@@ -167,14 +182,21 @@ DELETE /api/posts/:id (protegido)
 ---
 
 Control de acceso utilizado:
+
 -Lectura publica
+
 -Escritura Protegida
 
 Recursos:
+
 Ver posts	✅	Público
+
 Ver autores	✅	Público
+
 Crear / editar / borrar posts	🔐	Protegido
+
 Crear / editar / borrar autores	🔐	Protegido 
+
 Perfil de usuario		🔐 Protegido 
 
 
@@ -191,9 +213,13 @@ Perfil de usuario		🔐 Protegido
 Buenas prácticas implementadas
 
 ✔️ Separación de capas
+
 ✔️ Uso de middlewares
+
 ✔️ JWT para autenticación moderna
+
 ✔️ Código modular y mantenible
+
 ✔️ Arquitectura escalable
 
 ---
