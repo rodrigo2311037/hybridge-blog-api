@@ -254,6 +254,7 @@ npm install
 ```
 3. Crear archivo .env en la raíz del proyecto:
 ```
+PORT=3000
 JWT_SECRET=super_secret_key
 DATABASE_URL=tu_url_de_base_de_datos
 
