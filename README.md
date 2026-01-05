@@ -272,5 +272,5 @@ http://localhost:3000
 ---
 🌍 El proyecto se encuentra desplegado en Render:
 ```
-https://TU-APP.onrender.com
+https://hybridge-blog-api-hrwf.onrender.com/
 ```
