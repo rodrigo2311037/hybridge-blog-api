@@ -168,9 +168,24 @@ Usuarios
 ```
 GET /api/profile (protegido)
 ```
-Blog
+Authors
+```
+GET /api/authors
+
+GET /api/authors/:id 
+
+POST /api/authors (protegido)
+
+PUT /api/authorS/:id (protegido)
+
+DELETE /api/authors/:id (protegido)
+```
+
+Posts
 ```
 GET /api/posts
+
+GET /api/posts/:id
 
 POST /api/posts (protegido)
 
@@ -209,7 +224,7 @@ Perfil de usuario		🔐 Protegido
 * No se usan sesiones de servidor
 
 ---
-Buenas prácticas implementadas
+Prácticas implementadas
 
 ✔️ Separación de capas
 
